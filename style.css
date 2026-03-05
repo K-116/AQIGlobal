@@ -1,48 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&family=M+PLUS+Rounded+1c:wght@400;500&display=swap');
+
 body{
-    display: flex;
-    justify-content: center;
+    background: linear-gradient(135deg, #2f94ff 0%, #3162e8 100%);
+    min-height: 100vh;
+    display:flex;
     align-items: center;
-    height: 50vh;
-    margin: 0;
-    font-family: "Archivo", sans-serif;
-    background: #222;
-    background-image: url('https://loremflickr.com/1600/900/mountains');
-    background-size:cover;
-}  
-.card{
     justify-content: center;
-    background: #000000d0;
+    padding: 20px;
+}
+.container{
+    font-family: "Balsamiq Sans", sans-serif;
+    background: linear-gradient(135deg, #000c35, #003180);
+    border-radius:30px;
+    padding: 40px;
+    max-width: 1400px;
+    width: 100%;
+    box-shadow:0 30px 60px rgba(0,0,0,0.54) ;
+}
+
+.header{
+    display:inline-block;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
     color: white;
-    border: 6em;
-    border-radius: 30px;
-    width: 100%; 
-    max-width: 1000px;
-    height: 500px;
-    margin: 3em;
 }
-.search{
-    display: flex;
-    justify-content: center;
+
+.logo{
+    display:inline-block;
+    font-size: 25px;
+}
+.nav{
+    display:flex;
+    gap: 25px;
     align-items: center;
-    border-radius: 5px;
-    padding: 4em;
-    margin:0em;
 }
-input.search-bar{ 
-    background: #7c7c7cd0;
-    border: none;
-    border-radius: 18px;
-    padding: 0.8em;
-    font-family: inherit;
-    font-size: 120%;
-    
+.nav a{
+    color:#2f94ff;
+    text-decoration: none;
 }
-button{
-    background: #7c7c7cd0;
-    margin: .5em;
-    border-radius: 50%;
-    border:none;
-    height: 2.5em;
-    
+
+.nav a:hover{
+    color:white;
 }
+
+.main-content{
+   display:flex;
+   justify-content: space-between;
+   grid-template-columns: 1fr 1.5fr; 
+   gap:50px;
+   color: white;
+}
+
+.main-content card{
+    display:flex;
+    align-items: center;
+
+}
+
+.title{
+    font-size: 4rem;
+    font-weight: 400px;
+
+}
+
+
 

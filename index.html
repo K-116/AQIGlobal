@@ -3,24 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>APIglobal</title>
+    <title>AQIglobal</title>
     <style>
     @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');</style>
     <link rel="stylesheet" href="./style.css">
     <script src="./main.js"></script> 
 </head>
 <body>
-    <div class="card">
-    <div class="search">
-        <input type="text" class="search-bar">
-        <button><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1.5em" width="1.5em" xmlns="http://www.w3.org/2000/svg"><path d="M909.6 854.5L649.9 594.8C690.2 542.7 712 479 712 412c0-80.2-31.3-155.4-87.9-212.1-56.6-56.7-132-87.9-212.1-87.9s-155.5 31.3-212.1 87.9C143.2 256.5 112 331.8 112 412c0 80.1 31.3 155.5 87.9 212.1C256.5 680.8 331.8 712 412 712c67 0 130.6-21.8 182.7-62l259.7 259.6a8.2 8.2 0 0 0 11.6 0l43.6-43.5a8.2 8.2 0 0 0 0-11.6zM570.4 570.4C528 612.7 471.8 636 412 636s-116-23.3-158.4-65.6C211.3 528 188 471.8 188 412s23.3-116.1 65.6-158.4C296 211.3 352.2 188 412 188s116.1 23.2 158.4 65.6S636 352.2 636 412s-23.3 116.1-65.6 158.4z"></path></svg></button>
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <span class="globe"><svg stroke="currentColor" fill="#2f94ff" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M256 32c-37.764.086-74.894 9.72-107.938 28.002l27.52 19.36 40.033-13.694 24.582 5.62 8.78 49.864 15.1-11.588 41.087-14.046 18.26 27.742-35.82 18.963-22.473 16.152-2.458 22.475-24.932 21.07-7.023 34.064-14.047 1.053 7.023-38.63-53.027-2.807-12.64 18.61-.1-.01v26.644l25.824 1.986 23.838 16.885-1.986 25.328 33.77 5.96-.36.76 53.004-30.558 90.88 59.098-20.51 48.548-32.685 20.156-61.143 77.965-13.498-3.845L262.216 365l-42.213-42.213 7.853-13.86-25.732-9.482-25.326-30.79-21.853-4.967L116.422 208H112l-5.117 26.746-3.64-39.146 5.267-29.147-.7-23.178L97.247 98.2C55.516 140.12 32.06 196.847 32 256c0 123.712 100.288 224 224 224 82.413-.028 158.155-45.308 197.195-117.887L442.82 298.14l-5.62-36.17-34.06-27.392 6.67-37.926 15.803-20.367 37.555-5.05C428.766 87.086 346.913 32.072 256 32zm89.047 48H368v48l-32 16v-23.836zm-122.76 166.518l29.85 4.918-4.213 6.32-24.23-4.916z"></path></svg></span>
+                <span>AQIglobal</span>
+            </div>
+            <div class="nav">
+                    <a href="#">API</a>
+                    <a href="https://www.airnow.gov/aqi/aqi-basics/" target = "_blank">What is AQI</a>
+                    <a href = "#">About</a>
+            </div>
+            <div class="main content">
+                <div class="panel">
+                    <h1 class="main">Air Quality Index</h1>
+                </div>
+                <div class="sub-main">
+                    <div id="date-time"></div>
+                    <div>Local -> <span id="location">IDN</span></div>
+                </div>
+                <div class="search-box">
+                    <input type="text" id="citySearch" placeholder="What's next?">
+                    <button class="btn" id="searchButton"></button>
+                </div>
+                <div class="card">
+                    <div class="card-title">Statistics</div>    
+                    <div class="aqi-display" id="mainAqi">90</div>
+                    <div class="info">
+                        <span>Dominant Pollutant</span>
+                    </div>
+                    <div class="risk-card">
+                        <div class="risk-header">
+                            <div class="card-title">Risk of Pollution </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+            </div>
+
+        </div>
     </div>
-    <div class="weather">
-        <h2 class="city">Weather in Seattle</h2>
-        <div class="temp">51 degrees F</div>
-        <img scr="" alt="" class="icon">
-        <div class="wind-speed">Wind speed = 3.2 MPH</div>
-    </div>
-   </div>
+    
 </body>
 </html>
