@@ -1,6 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&family=M+PLUS+Rounded+1c:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&family=M+PLUS+Rounded+1c:wght@500&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 
 body{
+    cursor:cell;
     background: linear-gradient(135deg, #2f94ff 0%, #3162e8 100%);
     min-height: 100vh;
     display:flex;
@@ -9,11 +10,11 @@ body{
     padding: 20px;
 }
 .container{
-    font-family: "Balsamiq Sans", sans-serif;
+    font-family: "Roboto Mono", monospace;
     background: linear-gradient(135deg, #000c35, #003180);
     border-radius:30px;
     padding: 40px;
-    max-width: 1400px;
+    max-width: 1600vw;
     width: 100%;
     box-shadow:0 30px 60px rgba(0,0,0,0.54) ;
 }
@@ -28,7 +29,9 @@ body{
 
 .logo{
     display:inline-block;
-    font-size: 25px;
+    font-size: 32px;
+    font-weight: 250;
+    
 }
 .nav{
     display:flex;
@@ -38,24 +41,23 @@ body{
 .nav a{
     color:#2f94ff;
     text-decoration: none;
+    text-transform: lowercase;
 }
 
 .nav a:hover{
-    color:white;
+    color:rgb(255, 128, 0);
+    transform: translateY(2px);
 }
 
 .main-content{
-   display:flex;
-   justify-content: space-between;
+   display:contents;
+   margin: 10px;
    grid-template-columns: 1fr 1.5fr; 
    gap:50px;
    color: white;
-}
-
-.main-content card{
-    display:flex;
-    align-items: center;
-
+   font-weight: 200;
+   
+   
 }
 
 .title{
@@ -63,6 +65,98 @@ body{
     font-weight: 400px;
 
 }
+.main{
+    font-weight: 200;
+    font-size: 29px;
+}
+.main-content card{
+    margin:20px;
+    
+}
+.sub-main{
+    display:inline-block;
+    align-items:end;
+    font-size: 14px;
+}
 
+.search-box{
+    display:flex;
+    align-items: center;
+    background: rgba(2, 5, 48, 0.507);
+    padding: 14px;
+    width: 90vw; 
+    border-radius: 13px;
+    border:2.25px solid rgba(255, 255, 255, 0.17);
+    align-items:center;
+    gap: 20px;
+    
+    
+}
 
+.btn{
+    font-family: "Roboto Mono", monospace;
+    background:#317de8;
+    color:white;
+    border:100px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 15px;
+    
+}
+.btn:hover{
+    cursor:pointer;
+    background:#1854a8;
+    transform: translateY(1px)
+}
 
+.search-box input{
+    color:white;
+    background:none;
+    border:none;
+    flex:1;
+    outline:none;
+    font-size: 15px;
+}
+
+.search-box input::placeholder{
+    color:rgba(255, 255, 255, 0.451);
+    font-size: 16px;
+    font-family: "Roboto Mono", monospace;
+
+}
+
+.card{
+
+    align-items: center;
+    margin-top: 5px;
+    background: rgba(2, 5, 48, 0.507);
+    padding: 14px;
+    border-radius: 13px;
+    border:2.25px solid rgba(255, 255, 255, 0.17);
+    gap: 20px;
+}
+.card-title{
+    margin-bottom:10px;
+    font-size: 25px;
+}
+.aqi{
+    font-size: 15px;
+    margin-bottom: 0;
+}
+.aqi-display{
+    font-size:72px;
+    font-weight: 300;
+    line-height:1.225;
+    margin: 10px 0 15px 0;
+}
+.risk-card{
+    margin-top: 5px;
+    background: rgba(2, 5, 48, 0.507);
+    padding: 14px;
+    border-radius: 13px;
+    border:2.25px solid rgba(255, 255, 255, 0.17);
+    gap: 20px;
+}
+.risk-header{
+    font-size:20px;
+}

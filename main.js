@@ -1,5 +1,8 @@
-let weather = {
-    "apikey": "30125ddc2b28d38aa253188b68fc245f"
+const API_KEY = "f5c31ffe4d78893867e0aaea77749af1"
+
+function updateDateTime(){
+    const now = new Date()
+    document.getElementById("datetime").textContent = now.toLocaleDateString()
 }
 
-//https://api.openweathermap.org/data/3.0/weather?q=Seattle&appid-30125ddc2b28d38aa253188b68fc245f
+updateDateTime()
