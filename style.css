@@ -11,12 +11,12 @@ body{
 }
 .container{
     font-family: "Roboto Mono", monospace;
-    background: linear-gradient(135deg, #000c35, #003180);
+    background: linear-gradient(15deg, #021247 0%, #04388b6d 100%);
     border-radius:30px;
     padding: 40px;
     max-width: 1600vw;
     width: 100%;
-    box-shadow:0 30px 60px rgba(0,0,0,0.54) ;
+    box-shadow:0 30px 60px rgba(3, 19, 75, 0.696) ;
 }
 
 .header{
