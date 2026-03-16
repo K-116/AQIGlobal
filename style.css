@@ -137,8 +137,9 @@ body{
     gap: 20px;
 }
 .card-title{
+    font-weight: 300;
     margin-bottom:10px;
-    font-size: 25px;
+    font-size: 27px;
 }
 .aqi{
     font-size: 15px;
@@ -146,7 +147,7 @@ body{
 }
 .aqi-display{
     font-size:72px;
-    font-weight: 300;
+    font-weight: 400;
     line-height:1.225;
     margin: 10px 0 15px 0;
 }
@@ -168,4 +169,18 @@ body{
 
 .aqi-stat{
     font-size: 20px;
+    
+}
+
+.info a{
+    color:#ff8c00;
+    text-decoration:none;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.info a:hover{
+    color:#009dff;
+    text-decoration: wavy;
+    font-weight: 400;
 }
