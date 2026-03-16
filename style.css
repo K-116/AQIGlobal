@@ -74,9 +74,10 @@ body{
     
 }
 .sub-main{
-    display:inline-block;
-    align-items:end;
-    font-size: 14px;
+    display:flexbox;
+    font-size: 17px;
+    font-weight:300;
+    margin: 10px;
 }
 
 .search-box{
@@ -159,4 +160,12 @@ body{
 }
 .risk-header{
     font-size:20px;
+}
+.risk-value{
+    font-size: 45px;
+    font-weight: 300;
+}
+
+.aqi-stat{
+    font-size: 20px;
 }
