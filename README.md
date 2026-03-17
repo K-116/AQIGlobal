@@ -1,7 +1,7 @@
 <h1>AQIglobal</h1>
 <p>link to the site -> https://aqi-global.vercel.app/</p>
 
-<p>I made this project because air quality is an incredibly important factor in our lives and prolonged exposure to poor air quality can evenutally attribute to heart issues, respiratory problems and even cancer. Predominantly poor areas are effected with poor air quality, so we should prioritize keeping ourselves and others healthy, having knowledge about air quality is a big step in that direction.</p>
+I made this project because air quality is an incredibly important factor in our lives and prolonged exposure to poor air quality can evenutally attribute to heart issues, respiratory problems and even cancer. Predominantly poor areas are effected with poor air quality, so we should prioritize keeping ourselves and others healthy, having knowledge about air quality is a big step in that direction.
 
 This project finds the AQ of any city in the world. For more accurate searches type the location in the format of: "City, Country" or for states in the US: "City, State, Country"
 
